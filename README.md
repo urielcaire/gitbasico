@@ -47,13 +47,13 @@ git config --global user.email "email.github@email.com"
 ```
 Recomendo utilizar o mesmo username e email que está na sua conta do github, ou seus commits não serão atrelados ao seu perfil.  
 
-Para colocar um usuário e email somente em um repositório específico, faça:
+Para colocar um usuário e email somente em um repositório específico, faça isso dentro dele:
 ```
 git config user.name "usernameGithub"
 git config user.email "email.github@email.com"
 ```
 Pronto, seu usuário já está configurado.  
-Caso queira ver que usuário está configurado em seu projeto, execute:
+Caso queira ver qual usuário está configurado em seu projeto, execute:
 ```
 git config user.name
 git config user.email
@@ -61,12 +61,10 @@ git config user.email
 
 ###Status  
 No git nós temos dois estados básicos para um arquivo:
-+ Working Directory
-   Arquivos que ainda estão sendo editados. São exbibidos na cor vermelha.
-+ Staging Area
-   Arquivos que já foram editados, mas estão aguardando um commit. São exibidos na cor verde.
++ **Working Directory** - Arquivos que ainda estão sendo editados. São exbibidos na cor vermelha.
++ **Staging Area** - Arquivos que já foram editados, mas estão aguardando um commit. São exibidos na cor verde.
 
-Para verificar nossos arquivos, utilize:
+Para verificar seus arquivos, utilize:
 ```
 git status
 ```
@@ -89,7 +87,7 @@ Para verificar seus commits, utilize o comando:
 ```
 git log
 ```
-O comando vai retornar uma lista com seus commits. Nessa lista vai conter o autor, a data e a mensagem que você colocou.
+O comando vai retornar uma lista com seus commits. Essa lista vai conter o autor, a data e a mensagem que você colocou.
 
 ###Git e GitHub  
 Crie em seu github um repositório com o mesmo nome da pasta de seu projeto.  
