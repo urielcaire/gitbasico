@@ -18,3 +18,10 @@ O resultado deve ser algo como:
 ```
 git version 2.x.x
 ```
+
+###Windows
+Acesse o [git-for-windows] e faça o download.  
+Após o download, execute e instale com as opções padrão.  
+Se tudo correu bem, agora você tem o **git bash** em seu computador.
+
+[git-for-windows]: https://git-for-windows.github.io/
