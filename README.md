@@ -51,4 +51,11 @@ Para verificar nossos arquivos, utilize:
 git status
 ```
 
+###Stage Area  
+Se você já editou seu arquivo e quer adicioná-lo ao Stage Area para futuramente incluir ele em um commit, execute:
+```
+git add meuarquivo.java
+```
+Agora seu arquivo está no Stage e está pronto para receber commit.
+
 [git-for-windows]: https://git-for-windows.github.io/
