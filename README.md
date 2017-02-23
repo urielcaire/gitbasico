@@ -39,6 +39,26 @@ Initialized empty Git repository in C:/umDiretorioQualquer/seuProjeto/.git/
 ```
 Com esse comando, nós acabamos de iniciar um novo repositório.
 
+###Configurar Usuário
+Para configurar um usuário global para seus repositórios:
+```
+git config --global user.name "usernameGithub"
+git config --global user.email "email.github@email.com"
+```
+Recomendo utilizar o mesmo username e email que está na sua conta do github, ou seus commits não serão atrelados ao seu perfil.  
+
+Para colocar um usuário e email somente em um repositório específico, faça:
+```
+git config user.name "usernameGithub"
+git config user.email "email.github@email.com"
+```
+Pronto, seu usuário já está configurado.  
+Caso queira ver que usuário está configurado em seu projeto, execute:
+```
+git config user.name
+git config user.email
+```
+
 ###Status  
 No git nós temos dois estados básicos para um arquivo:
 + Working Directory
@@ -85,7 +105,5 @@ git push origin master
 ```
 Após isso, o terminal ou gitbash irá pedir seu usuário e senha do github. Se ambos estiverem corretos, o push será feito
 e o repositório remoto atualizado.
-
-
 
 [git-for-windows]: https://git-for-windows.github.io/
