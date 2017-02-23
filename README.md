@@ -71,4 +71,21 @@ git log
 ```
 O comando vai retornar uma lista com seus commits. Nessa lista vai conter o autor, a data e a mensagem que você colocou.
 
+###Git e GitHub  
+Crie em seu github um repositório com o mesmo nome da pasta de seu projeto.  
+Feito isso, para vincular o projeto local e o remoto:
+```
+git remote add origin https://github.com/urielcaire/seurepositorio.git
+```
+Agora seu repositório local já sabe que existe um repositório remoto pra onde ele pode enviar as mudanças.  
+
+Se você quer subir seus commits para o repositório remoto, faça:
+```
+git push origin master
+```
+Após isso, o terminal ou gitbash irá pedir seu usuário e senha do github. Se ambos estiverem corretos, o push será feito
+e o repositório remoto atualizado.
+
+
+
 [git-for-windows]: https://git-for-windows.github.io/
