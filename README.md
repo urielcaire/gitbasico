@@ -58,4 +58,17 @@ git add meuarquivo.java
 ```
 Agora seu arquivo está no Stage e está pronto para receber commit.
 
+###Fazer um Commit
+Você só pode fazer commit de arquivos que estão no Stage Area.  
+Para fazer o commit de um arquivo, esse é o comando:
+```
+git commit meuarquivo.java -m "Minha mensagem"
+```
+Pronto, seu primeiro commit foi feito!  
+Para verificar seus commits, utilize o comando:
+```
+git log
+```
+O comando vai retornar uma lista com seus commits. Nessa lista vai conter o autor, a data e a mensagem que você colocou.
+
 [git-for-windows]: https://git-for-windows.github.io/
