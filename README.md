@@ -39,4 +39,16 @@ Initialized empty Git repository in C:/umDiretorioQualquer/seuProjeto/.git/
 ```
 Com esse comando, nós acabamos de iniciar um novo repositório.
 
+###Status  
+No git nós temos dois estados básicos para um arquivo:
++ Working Directory
+   Arquivos que ainda estão sendo editados. São exbibidos na cor vermelha.
++ Staging Area
+   Arquivos que já foram editados, mas estão aguardando um commit. São exibidos na cor verde.
+
+Para verificar nossos arquivos, utilize:
+```
+git status
+```
+
 [git-for-windows]: https://git-for-windows.github.io/
