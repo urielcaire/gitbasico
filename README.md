@@ -93,7 +93,7 @@ O comando vai retornar uma lista com seus commits. Essa lista vai conter o autor
 Crie em seu github um repositório com o mesmo nome da pasta de seu projeto.  
 Feito isso, para vincular o projeto local e o remoto:
 ```
-git remote add origin https://github.com/urielcaire/seurepositorio.git
+git remote add origin https://github.com/seuUsuarioGitHUB/seurepositorio.git
 ```
 Agora seu repositório local já sabe que existe um repositório remoto pra onde ele pode enviar as mudanças.  
 
