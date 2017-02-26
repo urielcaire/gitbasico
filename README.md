@@ -74,6 +74,11 @@ Se você já editou seu arquivo e quer adicioná-lo ao Stage Area para futuramen
 ```
 git add meuarquivo.java
 ```
+Caso queira adicionar todos os arquivos de uma só vez, execute:
+```
+git add *
+```
+
 Agora seu arquivo está no Stage e está pronto para receber commit.
 
 ###Fazer um Commit
@@ -105,3 +110,36 @@ Após isso, o terminal ou gitbash irá pedir seu usuário e senha do github. Se 
 e o repositório remoto atualizado.
 
 [git-for-windows]: https://git-for-windows.github.io/
+
+#Trabalhando com Branch
+Branch são ramos que você pode criar dentro do seu repositório, por padão o git cria um repositório chamado "master" onde fica os seus arquivos.
+
+##Como trabalhar com Branch?
+Em projetos o padão é criar um Branch para cada nova funcionalidade que será desenvolvida no sistema. Por exemplo, você está criando uma aplicação Web e vai começar a desenvolver um sistema de Login, vamos começar criando um novo branch.
+```
+git branch sistemaLogin
+git checkout sistemaLogin
+```
+O primeiro comando vai criar um novo ramo que é uma cópia do branch principal (master) e vamos chamar de "sistemaLogin", e no comanto seguinte vamos mudar para o branch que acabamos de criar.
+
+A partir desse momento você pode trabalhar normalmente no seu projeto que não ira atrapalhar o desenvolvimento de outros ramos do projeto. Porem o branch foi criado localmente e está disponivel apenas para você, caso queira disponibilizar o branch para sua equipe de desenvolvimento, execute:
+```
+git push origin sistemaLogin
+```
+O comando acima vai criar o branch no repositório remoto, e disponivel para que outros membros da equipe trabalhem nele.
+
+Após desenvolver a nova funcionalidade é necessario atualizar o branch principal com as novas modificações, então vamos lá.
+```
+git checkout master
+git merge sistemaLogin
+```
+Para mesclar a nova funcionalidade para o "master", precisamos retornar para o branch principal e fazer o "merge" com o branch "sistemaLogin".
+
+Depois de atualizar o branch master você pode deletar o branch em que estava sendo desenvolvido a funcionalidade antiga, para isso basta executar:
+```
+git branch -d sistemaLogin
+```
+O comando acima deleta o branch local, caso queira deletar um branch remoto, execute:
+```
+git push origin :sistemaLogin
+```
