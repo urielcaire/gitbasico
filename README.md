@@ -92,8 +92,21 @@ Para verificar seus commits, utilize o comando:
 ```
 git log
 ```
-O comando vai retornar uma lista com seus commits. Essa lista vai conter o autor, a data e a mensagem que você colocou.
+O comando vai retornar uma lista com seus commits. Essa lista vai conter o autor, a data e a mensagem que você colocou.  
 
+###Desfazer Último Commit
+Para desfazer o último commit que ainda não recebeu push, você pode optar por uma das duas opções:
+```
+git reset HEAD~1 --hard
+
+git reset HEAD~1 --soft
+```
+No **hard** suas alterações são todas descartadas, enquanto que no **soft** os arquivos apenas voltam para o stage area.
+
+Para desfazer o último commit que já recebeu push:
+´´´
+git revert HEAD~1
+´´´
 ###Git e GitHub  
 Crie em seu github um repositório com o mesmo nome da pasta de seu projeto.  
 Feito isso, para vincular o projeto local e o remoto:
@@ -143,3 +156,5 @@ O comando acima deleta o branch local, caso queira deletar um branch remoto, exe
 ```
 git push origin :sistemaLogin
 ```
+----
+Mais conteúdo: http://schacon.github.io/git/git.html
