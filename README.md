@@ -104,9 +104,9 @@ git reset HEAD~1 --soft
 No **hard** suas alterações são todas descartadas, enquanto que no **soft** os arquivos apenas voltam para o stage area.
 
 Para desfazer o último commit que já recebeu push:
-´´´
+```
 git revert HEAD~1
-´´´
+```
 ###Git e GitHub  
 Crie em seu github um repositório com o mesmo nome da pasta de seu projeto.  
 Feito isso, para vincular o projeto local e o remoto:
