@@ -122,7 +122,12 @@ git push origin master
 Após isso, o terminal ou gitbash irá pedir seu usuário e senha do github. Se ambos estiverem corretos, o push será feito
 e o repositório remoto atualizado.
 
-[git-for-windows]: https://git-for-windows.github.io/
+###Atualizar seu Repositório Local
+Para atualizar o reposósitório local em relação ao remoto:
+```
+git pull
+```
+Após isso, seu repositório será atualizado.
 
 #Trabalhando com Branch
 Branch são ramos que você pode criar dentro do seu repositório, por padão o git cria um repositório chamado "master" onde fica os seus arquivos.
@@ -158,3 +163,5 @@ git push origin :sistemaLogin
 ```
 ----
 Mais conteúdo: http://schacon.github.io/git/git.html
+
+[git-for-windows]: https://git-for-windows.github.io/
