@@ -162,6 +162,8 @@ O comando acima deleta o branch local, caso queira deletar um branch remoto, exe
 git push origin :sistemaLogin
 ```
 ----
-Mais conteúdo: http://schacon.github.io/git/git.html
+Mais conteúdo:  
+http://schacon.github.io/git/git.html  
+https://git-scm.com/book/pt-br/v1
 
 [git-for-windows]: https://git-for-windows.github.io/
