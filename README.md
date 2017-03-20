@@ -1,10 +1,10 @@
-#GitBasico
+# GitBasico
 Este repositório terá alguns comandos básicos do git, apenas para possíveis consultas. :smile:  
 
-##Instalação
+## Instalação
 Para iniciar a utilização do git, vamos primeiro instalá-lo. Escolha o seu Sistema Operacional abaixo e siga as intruções.
 
-###Distribuições Linux
+### Distribuições Linux
 Via terminal, apenas atualize sua lista de pacotes e em seguida execute a instalação:
 ```
 sudo apt-get update
@@ -19,14 +19,14 @@ O resultado deve ser algo como:
 git version 2.x.x
 ```
 
-###Windows
+### Windows
 Acesse o [git-for-windows] e faça o download.  
 Após o download, execute e instale com as opções padrão.  
 Se tudo correu bem, agora você tem o **git bash** em seu computador.
 
-##Começando Utilizar o Git
+## Começando Utilizar o Git
 Se você está no Linux, tudo será feito via **terminal**. Já no windows você deve utilizar o **git bash**.
-###Novo Repositório  
+### Novo Repositório  
 Primeiro, através do git bash ou do terminal, navegue até a pasta do projeto que você quer tornar um repositório.
 Caso você ainda não tenha nenhum projeto, apenas crie uma pasta e navegue até ela.  
 Já dentro da pasta do seu projeto, inicialize seu repositório, para isso:
@@ -39,7 +39,7 @@ Initialized empty Git repository in C:/umDiretorioQualquer/seuProjeto/.git/
 ```
 Com esse comando, nós acabamos de iniciar um novo repositório.
 
-###Configurar Usuário
+### Configurar Usuário
 Para configurar um usuário global para seus repositórios:
 ```
 git config --global user.name "usernameGithub"
@@ -59,7 +59,7 @@ git config user.name
 git config user.email
 ```
 
-###Status  
+### Status  
 No git nós temos dois estados básicos para um arquivo:
 + **Working Directory** - Arquivos que ainda estão sendo editados. São exbibidos na cor vermelha.
 + **Staging Area** - Arquivos que já foram editados, mas estão aguardando um commit. São exibidos na cor verde.
@@ -69,7 +69,7 @@ Para verificar seus arquivos, utilize:
 git status
 ```
 
-###Stage Area  
+### Stage Area  
 Se você já editou seu arquivo e quer adicioná-lo ao Stage Area para futuramente incluir ele em um commit, execute:
 ```
 git add meuarquivo.java
@@ -81,7 +81,7 @@ git add *
 
 Agora seu arquivo está no Stage e está pronto para receber commit.
 
-###Fazer um Commit
+### Fazer um Commit
 Você só pode fazer commit de arquivos que estão no Stage Area.  
 Para fazer o commit de um arquivo, esse é o comando:
 ```
@@ -94,7 +94,7 @@ git log
 ```
 O comando vai retornar uma lista com seus commits. Essa lista vai conter o autor, a data e a mensagem que você colocou.  
 
-###Desfazer Último Commit
+### Desfazer Último Commit
 Para desfazer o último commit que ainda não recebeu push, você pode optar por uma das duas opções:
 ```
 git reset HEAD~1 --hard
@@ -107,7 +107,7 @@ Para desfazer o último commit que já recebeu push:
 ```
 git revert HEAD~1
 ```
-###Git e GitHub  
+### Git e GitHub  
 Crie em seu github um repositório com o mesmo nome da pasta de seu projeto.  
 Feito isso, para vincular o projeto local e o remoto:
 ```
@@ -122,17 +122,17 @@ git push origin master
 Após isso, o terminal ou gitbash irá pedir seu usuário e senha do github. Se ambos estiverem corretos, o push será feito
 e o repositório remoto atualizado.
 
-###Atualizar seu Repositório Local
+### Atualizar seu Repositório Local
 Para atualizar o reposósitório local em relação ao remoto:
 ```
 git pull
 ```
 Após isso, seu repositório será atualizado.
 
-#Trabalhando com Branch
+# Trabalhando com Branch
 Branch são ramos que você pode criar dentro do seu repositório, por padão o git cria um repositório chamado "master" onde fica os seus arquivos.
 
-##Como trabalhar com Branch?
+## Como trabalhar com Branch?
 Em projetos o padão é criar um Branch para cada nova funcionalidade que será desenvolvida no sistema. Por exemplo, você está criando uma aplicação Web e vai começar a desenvolver um sistema de Login, vamos começar criando um novo branch.
 ```
 git branch sistemaLogin
