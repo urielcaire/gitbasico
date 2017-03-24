@@ -59,6 +59,28 @@ git config user.name
 git config user.email
 ```
 
+### Configurar PROXY
+Para configurar a utilização de um proxy insira:  
+```
+git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+```
+- Mude o 'proxyuser' para seu usuário de proxy
+- Mude o 'proxypwd' para a sua senha de proxy
+- Mude o 'proxypwd@proxy.server.com' para a URL do proxy
+- Mude o '8080' para a porta do proxy
+
+**Atenção!** Essa configuração utiliza URL Enconding, se sua senha possui caracteres especiais (!, $, #) você deve inserir a URL
+Encoding referente a eles. 
+
+Para verificar as atuais configurações de proxy, insira: 
+```
+git config --global --get http.proxy
+```
+Caso queira zerar as configurações de proxy ~~parar de ser espionado~~:
+```
+git config --global --unset http.proxy
+```
+
 ### Status  
 No git nós temos dois estados básicos para um arquivo:
 + **Working Directory** - Arquivos que ainda estão sendo editados. São exbibidos na cor vermelha.
