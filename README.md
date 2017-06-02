@@ -1,4 +1,4 @@
-# GitBasico
+﻿# GitBasico
 Este repositório terá alguns comandos básicos do git, apenas para possíveis consultas. :smile:  
 
 ## Instalação
@@ -98,7 +98,7 @@ git add meuarquivo.java
 ```
 Caso queira adicionar todos os arquivos de uma só vez, execute:
 ```
-git add *
+git add --all
 ```
 
 Agora seu arquivo está no Stage e está pronto para receber commit.
